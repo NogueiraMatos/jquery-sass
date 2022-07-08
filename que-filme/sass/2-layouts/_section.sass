@@ -1,0 +1,14 @@
+@use '../1-base/variables'
+@use 'layouts-mixins'
+
+section
+    @include layouts-mixins.center-content
+    
+.section-main-div
+    @include layouts-mixins.center-content
+    
+    max-width: variables.$container-width
+    h2
+        color: variables.$primary-color
+        font-size: 3rem
+        padding-top: 1rem

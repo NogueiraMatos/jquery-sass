@@ -2,5 +2,35 @@
 @use '../1-base/base-mixins'
 @use 'layouts-mixins'
 
-.header
-  background-color: variables.$bg-color
+header
+  width: 100%
+
+.nav
+  @include layouts-mixins.center-content
+  align-items: center
+  max-width: variables.$container-width
+  height: 5rem
+  
+  &-search
+    width: 100%
+    @include layouts-mixins.center-content
+    align-items: center
+
+  img
+    height: 4rem
+    border-radius: 10px
+    margin: 0 5rem
+
+  input
+    height: 3rem
+    border: none
+    outline: none
+    border-radius: 5px
+    font-size: 1.5rem
+    margin-right: 5rem
+    width: 100%
+
+  i
+    font-size: 1.5rem
+    position: relative
+    right: 7rem
