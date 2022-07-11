@@ -3,7 +3,25 @@
 @use 'layouts-mixins'
 
 footer
+    display: flex
+    flex-direction: column
     @include layouts-mixins.center-content
-    width: 20rem
+    width: variables.$container-width
+
+    div
+        padding-top: 4rem
+        @include layouts-mixins.center-content
     i
         font-size: 2rem
+    img
+        width: 20rem
+        padding-top: 2rem
+        @include layouts-mixins.center-content
+    p
+        padding-top: 2rem
+        color: variables.$secundary-color
+        float: left
+        @include layouts-mixins.center-content
+    
+    .footer-social-networks
+        width: 20rem

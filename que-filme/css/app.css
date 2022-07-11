@@ -70,13 +70,39 @@ header {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  width: 20rem;
+  width: 1220px;
+}
+footer div {
+  padding-top: 4rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 footer i {
   font-size: 2rem;
+}
+footer img {
+  width: 20rem;
+  padding-top: 2rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer p {
+  padding-top: 2rem;
+  color: #fff;
+  float: left;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-social-networks {
+  width: 20rem;
 }
 
 main {
@@ -105,6 +131,7 @@ section {
   color: #E2B616;
   font-size: 3rem;
   padding-top: 1rem;
+  padding-bottom: 4rem;
 }
 
 .btn {
