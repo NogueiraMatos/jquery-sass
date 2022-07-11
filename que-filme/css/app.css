@@ -68,6 +68,9 @@ header {
   position: relative;
   right: 7rem;
 }
+.nav i:hover {
+  cursor: pointer;
+}
 
 footer {
   display: flex;
@@ -75,7 +78,6 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  width: 1220px;
 }
 footer div {
   padding-top: 4rem;
@@ -119,6 +121,11 @@ section {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+}
+section span {
+  padding-left: 1rem;
+  color: #E2B616;
 }
 
 .section-main-div {
@@ -132,6 +139,34 @@ section {
   font-size: 3rem;
   padding-top: 1rem;
   padding-bottom: 4rem;
+}
+
+.catalog {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.catalog-movies {
+  padding: 6rem 2rem;
+}
+.catalog-poster {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 12rem;
+  height: 18rem;
+}
+.catalog-vote {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.catalog-title {
+  color: #fff;
+  padding-top: 1rem;
+  text-align: center;
 }
 
 .btn {

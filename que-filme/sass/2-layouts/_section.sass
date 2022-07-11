@@ -3,13 +3,45 @@
 
 section
     @include layouts-mixins.center-content
+    flex-direction: column
     
+    span
+        padding-left: 1rem
+        color: variables.$primary-color
+
+
 .section-main-div
     @include layouts-mixins.center-content
     
     max-width: variables.$container-width
+    
     h2
         color: variables.$primary-color
         font-size: 3rem
         padding-top: 1rem
         padding-bottom: 4rem
+
+
+.catalog
+    @include layouts-mixins.center-content
+    justify-content: space-evenly
+    flex-wrap: wrap
+
+    &-movies
+        
+        padding: 6rem 2rem
+
+    &-poster
+        @include layouts-mixins.center-content
+        width: 12rem
+        height: 18rem
+
+    &-vote
+        padding-top: 1rem
+        display: flex
+        justify-content: center
+
+    &-title
+        color: variables.$secundary-color
+        padding-top: 1rem
+        text-align: center
