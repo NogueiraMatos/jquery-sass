@@ -2,11 +2,6 @@
 @use '../1-base/base-mixins'
 @use 'layouts-mixins'
 
-header
-  width: 100%
-  background-color: variables.$secondary-bg-color
-  position: fixed
-
 .nav
   @include layouts-mixins.center-content
   max-width: variables.$container-width
@@ -16,11 +11,11 @@ header
     width: 100%
     @include layouts-mixins.center-content
   
-
   img
     height: 4rem
     border-radius: 10px
-    margin: 0 5rem
+    margin-right: 2rem
+    margin-left: 1rem
 
   input
     height: 3rem
@@ -28,13 +23,13 @@ header
     outline: none
     border-radius: 5px
     font-size: 1.5rem
-    margin-right: 5rem
+    margin-right: 1rem
     width: 100%
 
   i
     font-size: 1.5rem
     position: relative
-    right: 7rem
+    right: 3rem
     &:hover
       cursor: pointer
   

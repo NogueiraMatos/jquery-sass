@@ -1,5 +1,34 @@
 @use 'variables'
 @use 'reset'
+@use 'base-mixins'
+@use '../2-layouts/_layouts-mixins'
 
 html
     background-color: variables.$bg-color
+
+header
+    width: 100%
+    background-color: variables.$secondary-bg-color
+    position: fixed
+
+main
+    height: 480px
+    width: 100%
+    background-image: url("/img/banner.jpeg")
+    background-position: 50%
+    background-size: cover
+    display: flex
+    justify-content: center
+
+    @include base-mixins.mobile
+        display: none
+
+section
+    @include layouts-mixins.center-content
+    flex-direction: column
+
+footer
+    background-color: variables.$secondary-bg-color
+    display: flex
+    flex-direction: column
+    @include layouts-mixins.center-content

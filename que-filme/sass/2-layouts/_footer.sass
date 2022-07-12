@@ -3,10 +3,6 @@
 @use 'layouts-mixins'
 
 footer
-    background-color: variables.$secondary-bg-color
-    display: flex
-    flex-direction: column
-    @include layouts-mixins.center-content
 
     div
         padding-top: 4rem
@@ -21,8 +17,8 @@ footer
         padding: 2rem
         color: variables.$secundary-color
         float: left
-        
-    
-    .footer-social-networks
-        width: 20rem
-        @include layouts-mixins.center-content
+        text-align: center
+       
+.footer-social-networks
+    width: 20rem
+    @include layouts-mixins.center-content

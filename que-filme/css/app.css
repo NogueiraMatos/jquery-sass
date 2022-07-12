@@ -36,6 +36,39 @@ header {
   position: fixed;
 }
 
+main {
+  height: 480px;
+  width: 100%;
+  background-image: url("/img/banner.jpeg");
+  background-position: 50%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 425px) {
+  main {
+    display: none;
+  }
+}
+
+section {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .nav {
   margin: 0 auto;
   display: flex;
@@ -54,7 +87,8 @@ header {
 .nav img {
   height: 4rem;
   border-radius: 10px;
-  margin: 0 5rem;
+  margin-right: 2rem;
+  margin-left: 1rem;
 }
 .nav input {
   height: 3rem;
@@ -62,27 +96,18 @@ header {
   outline: none;
   border-radius: 5px;
   font-size: 1.5rem;
-  margin-right: 5rem;
+  margin-right: 1rem;
   width: 100%;
 }
 .nav i {
   font-size: 1.5rem;
   position: relative;
-  right: 7rem;
+  right: 3rem;
 }
 .nav i:hover {
   cursor: pointer;
 }
 
-footer {
-  background-color: #1a1a1a;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 footer div {
   padding-top: 4rem;
 }
@@ -97,31 +122,15 @@ footer p {
   padding: 2rem;
   color: #fff;
   float: left;
+  text-align: center;
 }
-footer .footer-social-networks {
+
+.footer-social-networks {
   width: 20rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-main {
-  height: 480px;
-  width: 100%;
-  background-image: url("/img/banner.jpeg");
-  background-position: 50%;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-}
-
-section {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
 }
 
 .section-main-div {
@@ -132,6 +141,13 @@ section {
   font-size: 3rem;
   padding-top: 1rem;
   padding-bottom: 4rem;
+  text-align: center;
+}
+@media (max-width: 425px) {
+  .section-main-div h2 {
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .catalog {
@@ -143,7 +159,7 @@ section {
   flex-wrap: wrap;
 }
 .catalog-movies {
-  padding: 6rem 2rem;
+  padding: 3rem 2rem;
 }
 .catalog-poster {
   width: 12rem;
@@ -201,23 +217,21 @@ section {
   padding: 1rem;
   font-size: 1.3rem;
 }
+@media (max-width: 700px) {
+  .movie-selection {
+    width: 20rem;
+  }
+  .movie-selection img {
+    width: 20rem;
+  }
+}
 
 .p-justified {
   text-align: justify;
 }
 
-.btn {
-  padding: 8px 15px;
-  height: 40px;
-  color: #ffffff;
-  border-radius: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: #E2B616;
-  cursor: pointer;
-  outline: none;
-  border: 2px solid #E2B616;
-  transition: 0.4s;
+.align-center {
+  text-align: center;
 }
 
 /*# sourceMappingURL=app.css.map */
