@@ -4,23 +4,15 @@
 section
     @include layouts-mixins.center-content
     flex-direction: column
-    
-    span
-        padding-left: 1rem
-        color: variables.$primary-color
-
 
 .section-main-div
-    @include layouts-mixins.center-content
-    
     max-width: variables.$container-width
-    
+
     h2
         color: variables.$primary-color
         font-size: 3rem
         padding-top: 1rem
         padding-bottom: 4rem
-
 
 .catalog
     @include layouts-mixins.center-content
@@ -28,13 +20,12 @@ section
     flex-wrap: wrap
 
     &-movies
-        
         padding: 6rem 2rem
 
     &-poster
-        @include layouts-mixins.center-content
         width: 12rem
         height: 18rem
+        cursor: pointer
 
     &-vote
         padding-top: 1rem
@@ -45,3 +36,43 @@ section
         color: variables.$secundary-color
         padding-top: 1rem
         text-align: center
+        max-width: 12rem
+
+    &-more
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &-more-p
+        color: variables.$primary-color
+        font-size: 2rem
+        text-align: center
+        font-weight: 700
+        padding-bottom: 1rem
+        cursor: pointer
+        width: 17rem
+
+.movie-selection
+    width: 50rem
+    color: variables.$secundary-color
+    @include layouts-mixins.center-content
+    flex-direction: column
+    text-align: center
+    align-items: center
+    padding-top: 6rem
+
+    img
+        width: 30rem
+
+    i, span
+        font-size: 2rem
+        padding: 1rem
+        padding-left: 1rem
+        color: variables.$primary-color
+
+    p
+        padding: 1rem
+        font-size: 1.3rem
+
+.p-justified
+    text-align: justify

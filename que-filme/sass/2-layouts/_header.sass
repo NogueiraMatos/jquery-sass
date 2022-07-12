@@ -4,17 +4,18 @@
 
 header
   width: 100%
+  background-color: variables.$secondary-bg-color
+  position: fixed
 
 .nav
   @include layouts-mixins.center-content
-  align-items: center
   max-width: variables.$container-width
   height: 5rem
   
   &-search
     width: 100%
     @include layouts-mixins.center-content
-    align-items: center
+  
 
   img
     height: 4rem

@@ -32,6 +32,8 @@ html {
 
 header {
   width: 100%;
+  background-color: #1a1a1a;
+  position: fixed;
 }
 
 .nav {
@@ -73,17 +75,16 @@ header {
 }
 
 footer {
+  background-color: #1a1a1a;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 footer div {
   padding-top: 4rem;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
 }
 footer i {
   font-size: 2rem;
@@ -91,20 +92,18 @@ footer i {
 footer img {
   width: 20rem;
   padding-top: 2rem;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
 }
 footer p {
-  padding-top: 2rem;
+  padding: 2rem;
   color: #fff;
   float: left;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
 }
 footer .footer-social-networks {
   width: 20rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 main {
@@ -121,17 +120,11 @@ section {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
-}
-section span {
-  padding-left: 1rem;
-  color: #E2B616;
 }
 
 .section-main-div {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
   max-width: 1220px;
 }
 .section-main-div h2 {
@@ -145,6 +138,7 @@ section span {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
@@ -152,11 +146,9 @@ section span {
   padding: 6rem 2rem;
 }
 .catalog-poster {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
   width: 12rem;
   height: 18rem;
+  cursor: pointer;
 }
 .catalog-vote {
   padding-top: 1rem;
@@ -167,6 +159,51 @@ section span {
   color: #fff;
   padding-top: 1rem;
   text-align: center;
+  max-width: 12rem;
+}
+.catalog-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.catalog-more-p {
+  color: #E2B616;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  width: 17rem;
+}
+
+.movie-selection {
+  width: 50rem;
+  color: #fff;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 6rem;
+}
+.movie-selection img {
+  width: 30rem;
+}
+.movie-selection i, .movie-selection span {
+  font-size: 2rem;
+  padding: 1rem;
+  padding-left: 1rem;
+  color: #E2B616;
+}
+.movie-selection p {
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.p-justified {
+  text-align: justify;
 }
 
 .btn {
