@@ -5,7 +5,7 @@ let movieSearch;
 $(document).ready(function () {
     pageName = location.pathname.split('/').slice(-1)[0]
     let searchVal = sessionStorage.getItem('searchVal')
-    pageName == 'index.html' && searchVal == null ? getMovie() : void (0)
+    pageName != 'movie.html' && searchVal == null ? getMovie() : void (0)
     console.log(searchVal)
     if (searchVal != null) {
         $('#searchInput').val(searchVal)
